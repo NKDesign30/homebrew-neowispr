@@ -1,6 +1,6 @@
 cask "neowispr" do
-  version "0.3.0"
-  sha256 "c532c999960a889a46cd12420d152509b27e4d9a971dfa73aaac8c2c89936c6d"
+  version "0.3.2"
+  sha256 "533cd3539e6e11d63d162a24e75900c179305e835de36cdff70467818fda1f33"
 
   url "https://github.com/NKDesign30/NeoWispr/releases/download/v#{version}/NeoWispr-v#{version}.dmg"
   name "NeoWispr"
