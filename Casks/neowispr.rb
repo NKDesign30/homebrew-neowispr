@@ -1,6 +1,6 @@
 cask "neowispr" do
-  version "0.0.22,116"
-  sha256 "e71af3eed8d243ecb4af4bc715a4972383574eef7a06b18ecc5bc2563b798b45"
+  version "0.0.23,118"
+  sha256 "fbc95456c4a67bdd97b32371e31ab8ed7509faa4754c4f2ceaf0e7bea791c227"
 
   url "https://neowispr.app/NeoWispr.dmg?v=#{version.csv.first}-build#{version.csv.second}"
   name "NeoWispr"
