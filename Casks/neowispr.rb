@@ -1,11 +1,16 @@
 cask "neowispr" do
-  version "0.3.2"
-  sha256 "533cd3539e6e11d63d162a24e75900c179305e835de36cdff70467818fda1f33"
+  version "0.0.19,112"
+  sha256 "868a0326949ae1124ded330af9a8822f21a8f924f89c9085935f579a0f6586b1"
 
-  url "https://github.com/NKDesign30/NeoWispr/releases/download/v#{version}/NeoWispr-v#{version}.dmg"
+  url "https://neowispr.app/NeoWispr.dmg?v=#{version.csv.first}-build#{version.csv.second}"
   name "NeoWispr"
   desc "Local Whisper dictation app with AI cleanup, snippets and scratchpad"
-  homepage "https://github.com/NKDesign30/NeoWispr"
+  homepage "https://neowispr.app/"
+
+  livecheck do
+    url "https://neowispr.app/appcast.xml"
+    strategy :sparkle
+  end
 
   depends_on macos: :sonoma
   depends_on arch: :arm64
